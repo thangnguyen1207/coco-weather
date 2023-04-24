@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    font-family: "Monserrat", sans-serif;
+    background: url('img/weather-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    background-color: #f7f7f7;
+    margin: 100px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Styling the app title */
+h1 {
+    font-size: 3rem;
+    background: -webkit-linear-gradient(45deg, #ade8f4, #0077b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styling the search bar and submit button */
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}   
+
+form input[type="text"]{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+form input[type="submit"]{
+    padding: 10px 20px;
+    background-color: #48bfe3 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    margin-left: 5px;
+    transition: background-color .3s ease;
+}
+
+form input[type="submit"]:hover{
+    background-color: #4ea8de;
+}
+
+/* Styling the weather data sections */
+.city {
+    font-size: 40px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(45deg, #f8f9fa, #212529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    background: no-repeat center center contain;
+}
+
+.temperature{
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(45deg, #f8f9fa, #212529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    background: -webkit-linear-gradient(45deg, #f8f9fa, #212529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details > div {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/* For most tablet screens */
+@media (max-width: 768px){
+    form{
+        flex-direction: column;
+    }
+    form input[type='text']{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* For most smartphone screens */
+@media (max-width: 768px){
+    .container{
+        margin: 60px;
+    }
+    form{
+        flex-direction: column;
+    }
+    form input[type='text']{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* For small smartphone screens such as Samsung Galaxy Fold */
+@media (max-width: 280px){
+    .container{
+        margin: 20px;
+    }
+    form{
+        flex-direction: column;
+    }
+    form input[type='text']{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
